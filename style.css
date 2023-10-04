@@ -22,7 +22,10 @@ p {
   background-color: #2f80ed !important;
 }
 section {
-  margin: 100px 0;
+  margin: 50px 0;
+}
+.btn-full {
+  width: 100%;
 }
 #my-nav-links li {
   margin-inline: 10px;
@@ -46,6 +49,7 @@ section {
   background-repeat: no-repeat;
   background-size: 7%;
 }
+
 #hero-salary-package-wrap {
   width: 88%;
   display: flex;
@@ -58,6 +62,16 @@ section {
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 10px;
+}
+.salary-wrap {
+  width: 400px;
+}
+.salary-wrap h5 {
+  font-size: 20px !important;
+}
+.salary-wrap p {
+  padding-top: 2px;
+  font-size: 12px !important;
 }
 #hero-student-wrap {
   text-align: center;
@@ -81,6 +95,7 @@ section {
   padding: 0 12px;
   border-radius: 8px;
   border: 1px solid var(--gray2-color);
+  width: 100%;
 }
 #input-wrap img {
   width: 25px;
@@ -110,7 +125,7 @@ section {
   justify-content: space-between;
   padding: 28px 18px 16px;
   border-radius: 18px;
-  width: 415px;
+  width: 400px;
 }
 /* cards */
 #form-card {
@@ -215,4 +230,54 @@ section {
 
   color: #333 !important;
   width: 440px;
+}
+
+/* CSS for screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575.98px) {
+  /* Your mobile-specific CSS rules here */
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 10px;
+  }
+  #hero {
+    background: none;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* CSS for screens between 577px and 991.98px (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Your tablet-specific CSS rules here */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+  #hero {
+    background: none;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* CSS for screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+  /* Your desktop-specific CSS rules here */
+  body {
+    font-size: 18px;
+  }
 }
