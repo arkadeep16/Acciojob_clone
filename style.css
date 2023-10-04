@@ -241,54 +241,65 @@ section {
   .container {
     padding: 10px;
   }
-  #hero-wrap {
+  #hero {
     background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
-  #hero-salary-package-wrap {
-    display: none !important;
+  .mobile-view-center {
+    text-align: center;
+  }
+  #form-wrap {
+    width: auto;
   }
   #grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    display: flex;
+
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  #grid .card {
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    height: max-content;
+    padding: 20px !important;
+    color: #333 !important;
+    width: 100%;
+  }
+  #form-1,
+  #form-2 {
+    width: 350px;
   }
 }
 
 /* CSS for screens between 577px and 991.98px (e.g., tablets) */
 @media (min-width: 576px) and (max-width: 991.98px) {
-  /* Your tablet-specific CSS rules here */
-  body {
-    font-size: 16px;
-  }
-
-  #hero-wrap {
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  #hero-salary-package-wrap {
-    display: none !important;
-  }
-  #form-wrap {
-    width: 100%;
-  }
   #grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
   }
+  #hero {
+    background: none;
+  }
+  #form-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 28px 18px 16px;
+    border-radius: 18px;
+    width: auto;
+  }
   #grid .card {
-    width: 100%;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    height: max-content;
+    padding: 20px !important;
+    color: #333 !important;
+    width: auto;
   }
 }
 
