@@ -241,8 +241,15 @@ section {
   .container {
     padding: 10px;
   }
-  #hero {
+  #hero-wrap {
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #hero-salary-package-wrap {
+    display: none !important;
   }
   #grid {
     display: grid;
@@ -259,11 +266,19 @@ section {
   body {
     font-size: 16px;
   }
-  .container {
-    padding: 20px;
-  }
-  #hero {
+
+  #hero-wrap {
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #hero-salary-package-wrap {
+    display: none !important;
+  }
+  #form-wrap {
+    width: 100%;
   }
   #grid {
     display: grid;
@@ -271,6 +286,9 @@ section {
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
+  }
+  #grid .card {
+    width: 100%;
   }
 }
 
